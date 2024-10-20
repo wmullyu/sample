@@ -7,8 +7,9 @@
 		<script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
 	</head>
 	<body>
-		<textarea name="content" id="editor"></textarea>
-		
+		<form>
+			<textarea name="content" id="editor"></textarea>
+		</form>
 		<script>
 		    ClassicEditor
 		        .create(document.querySelector('#editor'), {
@@ -25,9 +26,6 @@
 		                    { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
 		                ]
 		        	}
-		        })
-		        .then(editor => {
-		            console.log(editor);
 		        })
 		        .catch(error => {
 		            console.error(error);
